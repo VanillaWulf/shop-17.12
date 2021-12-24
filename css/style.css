@@ -127,3 +127,20 @@ body {
     /*  background-image: url(../img/man.jpg); */
     width: 100%;
 }
+
+.white-icon {
+    fill: azure;
+}
+
+.header__menu-btn {
+    border: none;
+}
+
+.header__menu-btn:hover .white-icon,
+.header__menu-btn:focus .white-icon {
+    fill: red;
+}
+
+.header__menu-btn:active  {
+    outline: 1px solid azure;
+}
