@@ -1,0 +1,63 @@
+.header__nav {
+    display: none;
+}
+
+.header {
+    background-color: $black;
+    min-height: 75px;
+    align-items: center;
+    display: flex;
+}
+
+.header__link {
+    text-decoration: none;
+    margin: 0 0 0 33px;
+}
+
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo-form-wrp {
+    display: flex;
+}
+
+.header__search {
+    margin: 0 0 0 41px;
+}
+
+.header__menu-btn {
+    border: 1px solid;
+    background-color: transparent;
+}
+
+.header__menu-btn {
+    border: none;
+}
+
+.header__menu-btn:hover .white-icon,
+.header__menu-btn:focus .white-icon {
+    fill: red;
+}
+
+.header__menu-btn:active {
+    outline: 1px solid azure;
+}
+
+@media (max-width: $tablet-width) {
+    .header__logo-form-wrp {
+        margin: 0 0 0 16px;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .header__logo-form-wrp {
+        margin: 0;
+    }
+
+    .header__link {
+        display: none;
+    }
+}

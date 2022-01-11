@@ -1,0 +1,54 @@
+.sales {
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: 31%;
+        min-height: 260px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid;
+        flex-direction: column;
+        background-size: cover;
+
+        @include tablet {
+            min-height: 161px;
+        }
+
+        @include mobile {
+            width: 100%;
+            min-height: 249px;
+        }
+
+        &--woman {
+            background-image: url(../img/sales-woman.jpg);
+        }
+
+        &--man {
+            /* background-image: url(../img/man.jpg); */
+        }
+
+        &--kids {
+            /* background-image: url(../img/man.jpg); */
+        }
+
+        &--shoes {
+            /*  background-image: url(../img/man.jpg); */
+            width: 100%;
+            min-height: 180px;
+
+            @include tablet {
+                min-height: 116px;
+            }
+
+            @include mobile {
+                min-height: 111px;
+            }
+        }
+    }
+}
